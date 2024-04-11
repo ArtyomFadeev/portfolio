@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./src/styles/reset.css" />
+  <link rel="stylesheet" href="./src/styles/style.css" />
+  <title>ArtProduct</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__links-burger">
+      <button class="header__burger">
+        <img class="header__burger-image" src="src/svg/burger.svg" alt="burger" />
+      </button>
+      <div class="header__links">
+        <a href="#" class="header__links-item">NEW</a>
+        <a href="#" class="header__links-item header__links-item_active"> КАТАЛОГ </a>
+        <a href="#" class="header__links-item">О НАС</a>
+      </div>
+    </div>
+    <div class="header__icons">
+      <a href="#" class="header__icons-item">
+        <img class="header__icons-item-img header__icons-item-img_hide" src="src/svg/user.svg" alt="user" />
+      </a>
+      <a href="#" class="header__icons-item">
+        <img class="header__icons-item-img" src="src/svg/heart.svg" alt="heart" />
+      </a>
+      <a href="#" class="header__icons-item">
+        <img class="header__icons-item-img" src="src/svg/cart.svg" alt="cart" />
+      </a>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="product">
+      <div class="product__image-gallery">
+        <div class="product__images">
+          <picture class="product__image">
+            <source media="(max-width:725px)" srcset="/src/images/mobile/product1.webp" />
+            <img src="src/images/desktop/product1.webp" alt="product1" class="product__image" />
+          </picture>
+          <picture class="product__image">
+            <source media="(max-width:725px)" srcset="/src/images/mobile/product2.webp" />
+            <img src="src/images/desktop/product2.webp" alt="product2" class="product__image" />
+          </picture>
+          <picture class="product__image">
+            <source media="(max-width:725px)" srcset="/src/images/mobile/product3.webp" />
+            <img src="src/images/desktop/product3.webp" alt="product3" class="product__image" />
+          </picture>
+          <picture class="product__image">
+            <source media="(max-width:725px)" srcset="/src/images/mobile/product4.webp" />
+            <img src="src/images/desktop/product4.webp" alt="product4" class="product__image" />
+          </picture>
+          <picture class="product__image">
+            <source media="(max-width:725px)" srcset="/src/images/mobile/product5.webp" />
+            <img src="src/images/desktop/product5.webp" alt="product5" class="product__image" />
+          </picture>
+        </div>
+
+        <div class="product__big-image">
+          <picture class="product__image">
+            <source media="(max-width:725px)" srcset="/src/images/mobile/activityProduct.webp" />
+            <img src="src/images/desktop/activityProduct.webp" alt="product-active"
+              class="product__image product__image_active" />
+          </picture>
+        </div>
+      </div>
+
+      <div class="product__info">
+        <h2 class="product__title">Кремовое пальто</h2>
+        <h3 class="product__price"><strong>3150 грн</strong></h3>
+        <div class="product__buttons">
+          <button class="button-primary">В корзину</button>
+          <button class="button-secondary">
+            <img class="product__button-svg" src="src/svg/heart.svg" alt="heart" /> В избранное
+          </button>
+        </div>
+
+        <div class="product__details">
+          <h4 class="product__details-title">Подробности</h4>
+          <div class="product__slide">
+            <button id="button-param" class="product__slide-button">
+              Обмеры и описание
+              <img class="product__slide-button-arrow" src="src/svg/arrow.svg" alt="arrow" />
+            </button>
+
+            <div id="param" class="product__description product__description_hide">
+              <ul class="product__param-list">
+                <li class="product__list-item">Длина изделия: 100см</li>
+                <li class="product__list-item">Длина рукава: 70см</li>
+                <li class="product__list-item">Длина ремня: 160см</li>
+              </ul>
+              <ul class="product__description-list">
+                <li class="product__description-item">Мягкая подкладка</li>
+                <li class="product__description-item">Глубокие карманы</li>
+              </ul>
+            </div>
+            <hr class="product__break" />
+          </div>
+          <div class="product__slide">
+            <button id="button-description" class="product__slide-button">
+              Состав и уход
+              <img class="product__slide-button-arrow" src="src/svg/arrow.svg" alt="arrow" />
+            </button>
+            <div id="description" class="product__description product__description_hide">
+              <ul class="product__measure-list">
+                <li class="product__list-item">Состав: 50% Шерсть, 50% Полиэстер</li>
+                <li class="product__list-item">Подкладка: 100% Полиэстер</li>
+                <li class="product__list-item">Утеплитель: 90% Пух, 10% Перо</li>
+              </ul>
+              <ul class="product__description-list">
+                <li class="product__description-item">Не стирать</li>
+                <li class="product__description-item">Гладить при температуре утюга до 110°C</li>
+                <li class="product__description-item">Не отбеливать</li>
+                <li class="product__description-item">Сухая чистка (химчистка)</li>
+                <li class="product__description-item">Барабанная сушка запрещена</li>
+              </ul>
+            </div>
+            <hr class="product__break" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="style">
+      <div class="style__wrap">
+        <h2 class="style__title">Дополните образ</h2>
+        <ul class="style__products">
+          <li class="style__product">
+            <div class="style__product-image-wrap">
+              <picture class="style__product-image">
+                <source media="(max-width:725px)" srcset="/src/images/mobile/optionalProduct1.webp" />
+                <img class="style__product-image" src="src/images/desktop/optionalProduct1.webp"
+                  alt="optionalProduct1" />
+              </picture>
+              <button class="style__product-button">
+                <img class="style__product-svg" src="src/svg/HeartWhite.svg" alt="HeartWhite" />
+              </button>
+            </div>
+            <div class="style__product-title-price">
+              <h3 class="style__product-title">Бежевая шуба</h3>
+              <h4 class="style__product-price"><strong>4200 грн</strong></h4>
+            </div>
+          </li>
+
+          <li class="style__product">
+            <div class="style__product-image-wrap">
+              <picture class="style__product-image">
+                <source media="(max-width:725px)" srcset="/src/images/mobile/optionalProduct2.webp" />
+                <img class="style__product-image" src="src/images/desktop/optionalProduct2.webp"
+                  alt="optionalProduct2" />
+              </picture>
+              <button class="style__product-button">
+                <img class="style__product-svg" src="src/svg/HeartWhite.svg" alt="HeartWhite" />
+              </button>
+            </div>
+            <div class="style__product-title-price">
+              <h3 class="style__product-title">Синяя парка</h3>
+              <h4 class="style__product-price"><strong>2900 грн</strong></h4>
+            </div>
+          </li>
+
+          <li class="style__product">
+            <div class="style__product-image-wrap">
+              <picture class="style__product-image">
+                <source media="(max-width:725px)" srcset="/src/images/mobile/optionalProduct3.webp" />
+                <img class="style__product-image" src="src/images/desktop/optionalProduct3.webp"
+                  alt="optionalProduct3" />
+              </picture>
+              <button class="style__product-button">
+                <img class="style__product-svg" src="src/svg/HeartWhite.svg" alt="HeartWhite" />
+              </button>
+            </div>
+            <div class="style__product-title-price">
+              <h2 class="style__product-title">Белая куртка</h2>
+              <h3 class="style__product-price"><strong>2900 грн</strong></h3>
+            </div>
+          </li>
+
+          <li class="style__product">
+            <div class="style__product-image-wrap">
+              <picture class="style__product-image">
+                <source media="(max-width:725px)" srcset="/src/images/mobile/optionalProduct4.webp" />
+                <img class="style__product-image" src="src/images/desktop/optionalProduct4.webp"
+                  alt="optionalProduct4" />
+              </picture>
+              <button class="style__product-button">
+                <img class="style__product-svg" src="src/svg/HeartWhite.svg" alt="HeartWhite" />
+              </button>
+            </div>
+            <div class="style__product-title-price">
+              <h2 class="style__product-title">Синее пальто</h2>
+              <h3 class="style__product-price"><strong>3150 грн</strong></h3>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="subscription">
+      <form class="subscription__form">
+        <h2 class="subscription__title">Узнайте первым о новинках</h2>
+        <input class="subscription__input" type="text" placeholder="Ваш e-mail*" />
+        <button class="button-primary subscription__button">Подписаться</button>
+        <p class="subscription__description">
+          Нажимая на кнопку «Подписаться», я соглашаюсь на обработку моих персональных данных и
+          ознакомлен(а) с условиями конфиденциальности.
+        </p>
+      </form>
+    </section>
+  </main>
+  <script src="src/scripts/index.js"></script>
+</body>
+
+</html>
